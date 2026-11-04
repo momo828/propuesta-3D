@@ -1,0 +1,2 @@
+/Users/cynthiaramirez/Juego3D_Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/cynthiaramirez/Juego3D_Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
