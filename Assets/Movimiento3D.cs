@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class Movimiento3D : MonoBehaviour
 {
-    public float velocidad = 5f;
+    public float velocidadLateral = 7f;
     public float fuerzaSalto = 6f;
     private Rigidbody rb;
     private bool enSuelo = true;
 
     void Start()
     {
-        
         rb = GetComponent<Rigidbody>();
     }
 
@@ -17,46 +16,45 @@ public class Movimiento3D : MonoBehaviour
     {
         
         float movX = Input.GetAxis("Horizontal");
-        float movZ = Input.GetAxis("Vertical");
 
-        Vector3 movimiento = new Vector3(movX, 0.0f, movZ) * velocidad;
+      
+        float velocidadZ = GameManager.instancia.velocidadAvance;
+
         
-       
-        rb.linearVelocity = new Vector3(movimiento.x, rb.linearVelocity.y, movimiento.z);
+        rb.linearVelocity = new Vector3(movX * velocidadLateral, rb.linearVelocity.y, velocidadZ);
 
+        
         if (Input.GetButtonDown("Jump") && enSuelo)
         {
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
-            enSuelo = false; 
+            enSuelo = false;
         }
+
+     
         if (transform.position.y < -3f)
-{
-    FindObjectOfType<GameManager>().ReiniciarJuego();
-}
+        {
+            GameManager.instancia.ReiniciarJuego();
+        }
     }
 
-   
-    
-private void OnCollisionEnter(Collision collision)
-{
-    if (collision.gameObject.name == "Plane") 
+    private void OnCollisionEnter(Collision collision)
     {
-        enSuelo = true;
+        if (collision.gameObject.name == "Plane") 
+        {
+            enSuelo = true;
+        }
+        
+        if (collision.gameObject.CompareTag("Obstaculo"))
+        {
+            GameManager.instancia.ReiniciarJuego();
+        }
     }
-    
-  
-    if (collision.gameObject.CompareTag("Obstaculo"))
-    {
-        FindObjectOfType<GameManager>().ReiniciarJuego();
-    }
-}
 
-
-private void OnTriggerEnter(Collider other)
-{
-    if (other.gameObject.CompareTag("Generador"))
+    private void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<GameManager>().GenerarModulo();
+        if (other.gameObject.CompareTag("Generador"))
+        {
+            GameManager.instancia.GenerarModulo();
+        }
     }
-}
 }
