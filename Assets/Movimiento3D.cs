@@ -15,7 +15,7 @@ public class Movimiento3D : MonoBehaviour
 
     void Update()
     {
-       
+        
         float movX = Input.GetAxis("Horizontal");
         float movZ = Input.GetAxis("Vertical");
 
@@ -24,21 +24,39 @@ public class Movimiento3D : MonoBehaviour
        
         rb.linearVelocity = new Vector3(movimiento.x, rb.linearVelocity.y, movimiento.z);
 
-       
         if (Input.GetButtonDown("Jump") && enSuelo)
         {
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
             enSuelo = false; 
         }
+        if (transform.position.y < -3f)
+{
+    FindObjectOfType<GameManager>().ReiniciarJuego();
+}
     }
 
-  
-    private void OnCollisionEnter(Collision collision)
+   
+    
+private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.name == "Plane") 
     {
-       
-        if (collision.gameObject.name == "Plane") 
-        {
-            enSuelo = true;
-        }
+        enSuelo = true;
     }
+    
+  
+    if (collision.gameObject.CompareTag("Obstaculo"))
+    {
+        FindObjectOfType<GameManager>().ReiniciarJuego();
+    }
+}
+
+
+private void OnTriggerEnter(Collider other)
+{
+    if (other.gameObject.CompareTag("Generador"))
+    {
+        FindObjectOfType<GameManager>().GenerarModulo();
+    }
+}
 }
