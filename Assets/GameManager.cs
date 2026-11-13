@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] modulosPrefabs;
     public float longitudModulo = 10f;
     private float proximoSpawnZ = 0f;
+    private float proximoSpawnX = 0f; // La variable ahora está correctamente arriba
 
     [Header("Dificultad y Puntaje")]
     public float velocidadAvance = 5f;
@@ -35,9 +36,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-       
         velocidadAvance += aumentoDificultad * Time.deltaTime;
-        
         
         puntajeExacto += velocidadAvance * Time.deltaTime;
         puntajeActual = (int)puntajeExacto;
@@ -46,12 +45,29 @@ public class GameManager : MonoBehaviour
         {
             textoPuntajeUI.text = "Puntos: " + puntajeActual;
         }
+       
+    int nivelActual = (puntajeActual / 100) + 1;
+    
+    if (textoPuntajeUI != null)
+    {
+        textoPuntajeUI.text = "Nivel: " + nivelActual + " | Puntos: " + puntajeActual;
+    }
     }
 
     public void GenerarModulo()
     {
         int indiceAleatorio = Random.Range(0, modulosPrefabs.Length);
-        Instantiate(modulosPrefabs[indiceAleatorio], new Vector3(0, 0, proximoSpawnZ), Quaternion.identity);
+
+        // Desfasa el siguiente módulo a la izquierda o derecha
+        float curvaX = Random.Range(-3f, 3f);
+        proximoSpawnX += curvaX;
+
+        // Evita que la curva se salga demasiado de la pantalla
+        proximoSpawnX = Mathf.Clamp(proximoSpawnX, -6f, 6f);
+
+        // Genera el módulo en la nueva posición
+        Instantiate(modulosPrefabs[indiceAleatorio], new Vector3(proximoSpawnX, 0, proximoSpawnZ), Quaternion.identity);
+        
         proximoSpawnZ += longitudModulo;
     }
 

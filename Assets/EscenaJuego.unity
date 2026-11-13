@@ -185,7 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 59893bca8e8b14a1c8e67c9bd19646c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 491610507}
   - component: {fileID: 491610509}
   - component: {fileID: 491610508}
+  - component: {fileID: 491610510}
   m_Layer: 5
   m_Name: TextoPuntaje
   m_TagString: Untagged
@@ -298,8 +299,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278215680
-  m_fontColor: {r: 0, g: 0.3921569, b: 0, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -369,6 +370,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491610506}
   m_CullTransparentMesh: 1
+--- !u!114 &491610510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491610506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &641695971
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +526,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &641695977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,7 +956,7 @@ MonoBehaviour:
   - {fileID: 8792735962411778427, guid: 0da53a62f15e047ecb133e4048e99be1, type: 3}
   longitudModulo: 10
   velocidadAvance: 5
-  aumentoDificultad: 0.05
+  aumentoDificultad: 1
   puntajeActual: 0
   textoPuntajeUI: {fileID: 491610508}
 --- !u!4 &1284942797
