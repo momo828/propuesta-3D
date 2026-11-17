@@ -2146,3 +2146,323 @@ Total: 23.647375 ms (FindLiveObjects: 1.211666 ms CreateObjectMapping: 0.705000 
 Prepare: number of updated asset objects reloaded= 0
 EnvironmentDependencyValues requested are different than current active one (requested -> active):
   graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-17T23:05:30.520858Z
+  Time since last request: 7223.37594658299986 seconds.
+  importAddress: GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: PreviewImporter
+Importing 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: PreviewImporter' with importer (PreviewImporter)
+xcrun: error: unable to find utility "metal", not a developer tool or in PATH
+xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
+Imported 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0' -> (Import Result ID: '17367fa17ad98b12a5d9b28aaf28157b') in 1.383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=834f59ade2ef38745bc057db65afe973 DependenciesID=f00e8e51eb7bbf92ef66189c14001a10 StaticDependenciesID=a0b8975e514f6167849dd96943352f01 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-17T23:05:32.03851Z
+  Time since last request: 0.00022875 seconds.
+  importAddress: GUID: a3d800b099a06e0478fb790c5e79057a - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph - Importer: PreviewImporter
+Importing 'GUID: a3d800b099a06e0478fb790c5e79057a - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: a3d800b099a06e0478fb790c5e79057a' -> (Import Result ID: 'c61a7e9dbd2788c4714e405db2d81a01') in 2.257 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be97f445b0355c0208282b33c46b8f7b DependenciesID=8467d984280e7e44f8a3bf7991007bd7 StaticDependenciesID=c19040ba5621468a074fcd14eb31c087 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (2.6 MB). Loaded Objects now: 7909.
+Memory consumption went from 183.2 MB to 180.6 MB.
+Total: 24.319458 ms (FindLiveObjects: 2.321125 ms CreateObjectMapping: 0.775958 ms MarkObjects: 20.700458 ms  DeleteObjects: 0.521125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+Thread 0x16debf000 may have been prematurely finalized
+<CFData 0x7adb410d70 [0x1f1674fc8]>{length = 6, capacity = 6, bytes = 0x603e5f297df8}
+ScriptableSingleton already exists. Did you query the singleton in a constructor?
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:.ctor () (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:83)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:.ctor () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:24)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs Line: 83)
+
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.782 seconds
+Domain Reload Profiling: 1675ms
+	BeginReloadAssembly (291ms)
+		DisableScriptedObjects (24ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (566ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (15ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (783ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (94ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6631 unused Assets / (5.5 MB). Loaded Objects now: 7822.
+Memory consumption went from 193.1 MB to 187.6 MB.
+Total: 18.810750 ms (FindLiveObjects: 2.154125 ms CreateObjectMapping: 2.469292 ms MarkObjects: 6.049583 ms  DeleteObjects: 8.137083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.46 ms, found 2 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (2.6 MB). Loaded Objects now: 7822.
+Memory consumption went from 177.1 MB to 174.5 MB.
+Total: 20.625959 ms (FindLiveObjects: 1.159334 ms CreateObjectMapping: 0.811000 ms MarkObjects: 18.074000 ms  DeleteObjects: 0.581042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+Thread 0x16debf000 may have been prematurely finalized
+ScriptableSingleton already exists. Did you query the singleton in a constructor?
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:.ctor () (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:83)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:.ctor () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:24)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs Line: 83)
+
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.539 seconds
+Domain Reload Profiling: 1553ms
+	BeginReloadAssembly (311ms)
+		DisableScriptedObjects (30ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (621ms)
+		LoadAssemblies (347ms)
+		AnalyzeDomain (229ms)
+			TypeCache.Refresh (28ms)
+			BuildScriptInfoCaches (175ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (539ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (204ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6631 unused Assets / (7.4 MB). Loaded Objects now: 7825.
+Memory consumption went from 191.1 MB to 183.8 MB.
+Total: 10.667292 ms (FindLiveObjects: 0.572500 ms CreateObjectMapping: 1.550875 ms MarkObjects: 5.096833 ms  DeleteObjects: 3.446625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (2.6 MB). Loaded Objects now: 7825.
+Memory consumption went from 175.6 MB to 173.0 MB.
+Total: 26.759833 ms (FindLiveObjects: 1.243583 ms CreateObjectMapping: 0.827250 ms MarkObjects: 22.213125 ms  DeleteObjects: 2.474666 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+You may not pass in objects that are already persistent
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/InternalEditorUtility.bindings.cs:378)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:Save (bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:133)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:Save () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:48)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:OnDisable () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:39)
+
+[/Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs line 133]
+
+Thread 0x16debf000 may have been prematurely finalized
+ScriptableSingleton already exists. Did you query the singleton in a constructor?
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.ScriptableSingleton`1<Unity.ProjectAuditor.Editor.ProjectAuditorSettings>:.ctor () (at /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs:83)
+Unity.ProjectAuditor.Editor.ProjectAuditorSettings:.ctor () (at /Users/bokken/build/output/unity/unity/Modules/ProjectAuditorEditor/API/ProjectAuditorSettings.cs:24)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/ScriptableSingleton.cs Line: 83)
+
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.598 seconds
+Domain Reload Profiling: 1235ms
+	BeginReloadAssembly (206ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (357ms)
+		LoadAssemblies (326ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (18ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (599ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (228ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6631 unused Assets / (4.9 MB). Loaded Objects now: 7828.
+Memory consumption went from 189.5 MB to 184.7 MB.
+Total: 18.530916 ms (FindLiveObjects: 1.782417 ms CreateObjectMapping: 2.777917 ms MarkObjects: 7.622334 ms  DeleteObjects: 6.347583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2164736

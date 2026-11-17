@@ -4912,3 +4912,639 @@ Asset Pipeline Refresh (id=c3b41f9bfdbac49928a6b7c275ec16df): Total: 0.544 secon
 [Licensing::Client] Successfully resolved entitlement details
 UPID Received '2f87e48a-df6a-415b-95ac-b58bdf09d3ed'.
 [Licensing::Client] Successfully resolved entitlement details
+
+Asset Pipeline Refresh (id=9261d90cb465b447f9a7cd6d58ac1942): Total: 0.403 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=398 ms
+		Asset DB Callback time: managed=0 ms, native=4 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1368, non-scripts=2359
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 4.284ms
+	ApplyChangesToAssetFolders: 1.194ms
+	Scan: 381.658ms
+	Collect global state as custom dependencies: 6.854ms
+	GatherAllCurrentPrimaryImportResultRevisions: 2.871ms
+	UnloadStreamsBegin: 0.219ms
+	UnloadStreamsEnd: 0.172ms
+	Untracked: 5.301ms
+
+Asset Pipeline Refresh (id=862014812c86f4d1a8e58218b6ced863): Total: 0.079 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+2026-11-17 17:02:05.714 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c14226260 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Asset Pipeline Refresh (id=b5e8b74ce9f624a9985d3cd3ee879698): Total: 0.206 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Failed acquiring screen capture permissions. Color picker will not be able to sample from other apps.
+Navigate to System Settings -> Privacy & Security -> Screen Recording to give permissions and restart the Unity Editor.
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.EyeDropper:Start (UnityEditor.GUIView,System.Action`1<UnityEngine.Color>) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs:1379)
+UnityEditor.EyeDropper:Start (UnityEditor.GUIView) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs:1368)
+UnityEditor.EditorGUI:DoColorField (UnityEngine.Rect,int,UnityEngine.Color,bool,bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorGUI.cs:5705)
+UnityEditor.EditorGUI:ColorField (UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.Color,bool,bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorGUI.cs:5630)
+UnityEditor.GradientEditor:OnGUI (UnityEngine.Rect) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/GradientEditor.cs:262)
+UnityEditor.GradientPicker:OnGUI () (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/GradientPicker.cs:242)
+UnityEditor.HostView:OldOnGUI () (at /Users/bokken/build/output/unity/unity/Editor/Mono/HostView.cs:313)
+UnityEngine.UIElements.IMGUIContainer:DoOnGUI (UnityEngine.Event,UnityEngine.Matrix4x4,UnityEngine.Rect,bool,UnityEngine.Rect,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:380)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,UnityEngine.Matrix4x4,UnityEngine.Rect,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:705)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:675)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:668)
+UnityEngine.UIElements.IMGUIContainer:SendEventToIMGUIRaw (UnityEngine.UIElements.EventBase,bool,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:628)
+UnityEngine.UIElements.IMGUIContainer:SendEventToIMGUI (UnityEngine.UIElements.EventBase,bool,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:617)
+UnityEngine.UIElements.IMGUIContainer:HandleEventBubbleUp (UnityEngine.UIElements.EventBase) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:769)
+UnityEngine.UIElements.EventDispatchUtilities:HandleEventAcrossPropagationPathWithCompatibilityEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.UIElements.VisualElement,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:325)
+UnityEngine.UIElements.EventDispatchUtilities:DispatchToElementUnderPointerOrPanelRoot (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,int,UnityEngine.Vector2) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:532)
+UnityEngine.UIElements.EventDispatchUtilities:DispatchToCapturingElementOrElementUnderPointer (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,int,UnityEngine.Vector2) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:569)
+UnityEngine.UIElements.PointerDownEvent:Dispatch (UnityEngine.UIElements.BaseVisualElementPanel) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/PointerEvents.cs:1437)
+UnityEngine.UIElements.EventDispatcher:ProcessEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:420)
+UnityEngine.UIElements.EventDispatcher:Dispatch (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.UIElements.DispatchMode) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:216)
+UnityEngine.UIElements.BaseVisualElementPanel:SendEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.DispatchMode) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Panel.cs:723)
+UnityEditor.UIElements.EditorEventDispatchUtility:DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.Event) (at /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/EditorEventDispatchUtility.cs:89)
+UnityEditor.UIElements.DefaultWindowBackend:ProcessEvent (UnityEngine.Event) (at /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/WindowBackends/DefaultWindowBackend.cs:114)
+UnityEditor.GUIView:ProcessEvent (UnityEngine.EntityId,intptr,bool&) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUIView.cs:70)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs Line: 1379)
+
+Failed acquiring screen capture permissions. Color picker will not be able to sample from other apps.
+Navigate to System Settings -> Privacy & Security -> Screen Recording to give permissions and restart the Unity Editor.
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.EyeDropper:Start (UnityEditor.GUIView,System.Action`1<UnityEngine.Color>) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs:1379)
+UnityEditor.EyeDropper:Start (UnityEditor.GUIView) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs:1368)
+UnityEditor.EditorGUI:DoColorField (UnityEngine.Rect,int,UnityEngine.Color,bool,bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorGUI.cs:5705)
+UnityEditor.EditorGUI:ColorField (UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.Color,bool,bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorGUI.cs:5630)
+UnityEditor.GradientEditor:OnGUI (UnityEngine.Rect) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/GradientEditor.cs:262)
+UnityEditor.GradientPicker:OnGUI () (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/GradientPicker.cs:242)
+UnityEditor.HostView:OldOnGUI () (at /Users/bokken/build/output/unity/unity/Editor/Mono/HostView.cs:313)
+UnityEngine.UIElements.IMGUIContainer:DoOnGUI (UnityEngine.Event,UnityEngine.Matrix4x4,UnityEngine.Rect,bool,UnityEngine.Rect,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:380)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,UnityEngine.Matrix4x4,UnityEngine.Rect,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:705)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,System.Action,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:675)
+UnityEngine.UIElements.IMGUIContainer:HandleIMGUIEvent (UnityEngine.Event,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:668)
+UnityEngine.UIElements.IMGUIContainer:SendEventToIMGUIRaw (UnityEngine.UIElements.EventBase,bool,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:628)
+UnityEngine.UIElements.IMGUIContainer:SendEventToIMGUI (UnityEngine.UIElements.EventBase,bool,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:617)
+UnityEngine.UIElements.IMGUIContainer:HandleEventBubbleUp (UnityEngine.UIElements.EventBase) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/IMGUIContainer.cs:769)
+UnityEngine.UIElements.EventDispatchUtilities:HandleEventAcrossPropagationPathWithCompatibilityEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.UIElements.VisualElement,bool) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:325)
+UnityEngine.UIElements.EventDispatchUtilities:DispatchToElementUnderPointerOrPanelRoot (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,int,UnityEngine.Vector2) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:532)
+UnityEngine.UIElements.EventDispatchUtilities:DispatchToCapturingElementOrElementUnderPointer (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,int,UnityEngine.Vector2) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:569)
+UnityEngine.UIElements.PointerDownEvent:Dispatch (UnityEngine.UIElements.BaseVisualElementPanel) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/PointerEvents.cs:1437)
+UnityEngine.UIElements.EventDispatcher:ProcessEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:420)
+UnityEngine.UIElements.EventDispatcher:Dispatch (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.UIElements.DispatchMode) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:216)
+UnityEngine.UIElements.BaseVisualElementPanel:SendEvent (UnityEngine.UIElements.EventBase,UnityEngine.UIElements.DispatchMode) (at /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Panel.cs:723)
+UnityEditor.UIElements.EditorEventDispatchUtility:DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel,UnityEngine.Event) (at /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/EditorEventDispatchUtility.cs:89)
+UnityEditor.UIElements.DefaultWindowBackend:ProcessEvent (UnityEngine.Event) (at /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/WindowBackends/DefaultWindowBackend.cs:114)
+UnityEditor.GUIView:ProcessEvent (UnityEngine.EntityId,intptr,bool&) (at /Users/bokken/build/output/unity/unity/Editor/Mono/GUIView.cs:70)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/GUI/ColorPicker.cs Line: 1379)
+
+[Worker1] Imported GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: PreviewImporter -> (ImportResultId: '17367fa17ad98b12a5d9b28aaf28157b') in 1.512404708 seconds
+[Worker0] Imported GUID: e3265ab4bf004d28a9537516768c1c75 - Path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf - Importer: PreviewImporter -> (ImportResultId: '800086bb9e2857c04f15fc5762c36436') in 1.635566583 seconds
+[Worker0] Imported GUID: ca2ed216f98028c4dae6c5224a952b3c - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph - Importer: PreviewImporter -> (ImportResultId: 'b427080216b2271284a7752693e286f0') in 0.16093425 seconds
+[Worker0] Imported GUID: 79459efec17a4d00a321bdcc27bbc385 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat - Importer: PreviewImporter -> (ImportResultId: 'd127667e6899fd2dac46a01d4084bea9') in 0.182154708 seconds
+[Worker0] Imported GUID: 59893bca8e8b14a1c8e67c9bd19646c0 - Path: Assets/Materiales/Mat_Suelo.mat - Importer: PreviewImporter -> (ImportResultId: '0b109dfa1596f88c85762af0971ac134') in 0.089233583 seconds
+[Worker0] Imported GUID: a2cdb8e36a4544b79bdc5a0836aac632 - Path: Assets/Materiales/Mat_Jugador.mat - Importer: PreviewImporter -> (ImportResultId: 'c0ea767a7d324dd4b73431a6976b2688') in 0.020704958 seconds
+[Worker0] Imported GUID: 124c112a6e8f1a54e8b0870e881b56d8 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph - Importer: PreviewImporter -> (ImportResultId: 'ca61a474b68d982cbba009c56c2b7ea1') in 0.803971833 seconds
+[Worker0] Imported GUID: f63d574838ccfb44f84acc05fed0af48 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph - Importer: PreviewImporter -> (ImportResultId: '4cad05aa721c7bf9e501cc0574609880') in 0.020790208 seconds
+[Worker0] Imported GUID: 8f586378b4e144a9851e7b34d9b748ee - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset - Importer: PreviewImporter -> (ImportResultId: '21e42641b258e9b88dc938243117c096') in 0.064971666 seconds
+[Worker0] Imported GUID: 2e498d1c8094910479dc3e1b768306a4 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset - Importer: PreviewImporter -> (ImportResultId: 'fce659a8bd008e2f01e83e3397e9a0ab') in 0.022643375 seconds
+[Worker1] Imported GUID: a3d800b099a06e0478fb790c5e79057a - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph - Importer: PreviewImporter -> (ImportResultId: 'c61a7e9dbd2788c4714e405db2d81a01') in 2.271150709 seconds
+xcrun: error: unable to find utility "metal", not a developer tool or in PATH
+xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
+Thread 0x17ffc7000 may have been prematurely finalized
+2026-11-17 17:06:15.557 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1560dfe0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Importing 'GUID: 7e780548853f346699af77dc514813cf - Path: Assets/EscenaJuego.unity' with importer (DefaultImporter)
+Imported 'GUID: 7e780548853f346699af77dc514813cf' -> (Import Result ID: 'addaada8836d5db5494e7d7ab1a48738') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=9fa8ea738e097c6abaeca9a0b6f63761 DependenciesID=22d85dd3c2db75b47a6351f877333651 StaticDependenciesID=512c0a36823c0ce4b9ae787c4a00552e 
+Asset Pipeline Refresh (id=fabb5e63f2f574f70a47d0ec17a90c1e): Total: 0.152 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x17b25f000 may have been prematurely finalized
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+2026-11-17 17:06:17.249 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17920140 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:06:17.253 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1789fe80 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:06:17.257 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1789c640 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:06:17.262 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1560e760 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.226 seconds
+Domain Reload Profiling: 2398ms
+	BeginReloadAssembly (933ms)
+		DisableScriptedObjects (68ms)
+		CreateAndSetChildDomain (662ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (150ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1227ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+		AwakeInstancesAfterBackupRestoration (402ms)
+
+Asset Pipeline Refresh (id=16b8892d206754cf49fe3521cf7648e2): Total: 2.736 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1405 ms
+		Asset DB Callback time: managed=16 ms, native=1 ms
+		Scripting: domain reloads=1, domain reload time=1311 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1368, non-scripts=2359
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 2.146ms
+	ApplyChangesToAssetFolders: 0.389ms
+	Collect global state as custom dependencies: 3.445ms
+	ProcessAssetsWithTransientArtifactChanges: 0.465ms
+	CategorizeAssets: 48.336ms
+	CompileScripts: 0.783ms
+	ImportOutOfDateAssets: 1270.005ms (1236.992ms without children)
+		CollectScriptTypesHashes: 1.715ms
+		ReloadNativeAssets: 0.956ms
+		UnloadImportedAssets: 0.197ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.524ms
+		ImportSchedulerStart: 31.304ms
+	PostProcessAllAssets: 16.737ms
+		MonoPostProcessAllAssets: 16.733ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.421ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 6.724ms
+			AssetChangedListener.OnPostprocessAllAssets 5.898ms
+			AssetPostprocessor.OnPostprocessAllAssets 5.347ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 3.284ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.905ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.778ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.124ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.047ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.738ms
+			PostProcessor.OnPostprocessAllAssets 0.719ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.643ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.599ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.558ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.503ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.481ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.442ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.400ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.383ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.339ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.226ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.206ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.202ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.200ms
+			AssetEvents.OnPostprocessAllAssets 0.171ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.159ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.159ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.158ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.152ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.127ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.083ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.077ms
+			SyncVS.PostprocessSyncProject 0.068ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.058ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.161ms
+	UnloadStreamsBegin: 0.249ms
+	PersistCurrentRevisions: 0.105ms
+	GenerateScriptTypeHashes: 1.731ms
+	GenerateScriptTypeSerializationHashes: 2.934ms
+	Untracked: 1389.139ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.890 ms
+	Integration:            703.756 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   706.652 ms
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x7002893000 may have been prematurely finalized
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.619 ms
+	Integration:            420.030 ms
+	Integration of assets:  0.006 ms
+	Thread Wait Time:       0.035 ms
+	Total Operation Time:   423.689 ms
+Unloading 195 unused Assets / (1.7 MB). Loaded Objects now: 9239.
+Memory consumption went from 369.4 MB to 367.6 MB.
+Total: 49.846000 ms (FindLiveObjects: 3.472167 ms CreateObjectMapping: 1.267166 ms MarkObjects: 38.125250 ms  DeleteObjects: 6.980792 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+
+Asset Pipeline Refresh (id=7b0fcd9f0bce742df8faad8b5377dcf9): Total: 0.609 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=606 ms
+		Asset DB Callback time: managed=0 ms, native=2 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1368, non-scripts=2359
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 3.157ms
+	ApplyChangesToAssetFolders: 1.513ms
+	Scan: 363.087ms
+	Collect global state as custom dependencies: 0.819ms
+	ProcessAssetsWithTransientArtifactChanges: 0.485ms
+	CategorizeAssets: 153.414ms
+	ImportOutOfDateAssets: 50.432ms (9.902ms without children)
+		ReloadNativeAssets: 0.067ms
+		UnloadImportedAssets: 0.140ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.425ms
+		ImportSchedulerStart: 39.896ms
+	GatherAllCurrentPrimaryImportResultRevisions: 1.386ms
+	UnloadStreamsBegin: 1.042ms
+	PersistCurrentRevisions: 0.103ms
+	Untracked: 31.999ms
+
+Asset Pipeline Refresh (id=ccf9183173706460c9992e47e8bc5981): Total: 0.097 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+2026-11-17 17:08:56.801 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1560d9a0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:09:35.045 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1560f700 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[Worker0] Imported GUID: e823cd5b5d27c0f4b8256e7c12ee3e6d - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat - Importer: PreviewImporter -> (ImportResultId: '82220567aa5e4a1e3e599e84d8e15519') in 0.631359333 seconds
+Launching external process: /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
+Launching external process: /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+xcrun: error: xcrun: error: unable to find utility "metal", not a developer tool or in PATH
+unable to find utility "metal", not a developer tool or in PATH
+xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
+xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
+2026-11-17 17:16:10.392 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c0f51c820 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:16:28.135 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c14226f80 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:17:36.787 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17932c60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:19:33.243 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1418aee0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:19:46.939 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1791a6c0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+[Licensing::Client] Successfully resolved entitlement details
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 14.5523ms
+Starting: /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Users/cynthiaramirez/Juego3D_Android
+[Licensing::Client] Successfully resolved entitlement details
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 7.8064ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.dll, with 152 defines and 339 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 159.3732ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 150 defines and 366 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 17.0578ms
+ExitCode: 0 Duration: 2s747ms
+[673/874    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[866/874    2s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.dll (+2 others)
+[867/874    0s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[868/874    0s] ILPostProcess Library/Bee/artifacts/1300b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.dll, with 152 defines and 339 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[869/874    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[870/874    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[871/874    0s] ILPostProcess Library/Bee/artifacts/1300b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 150 defines and 366 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[872/874    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[873/874    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (2.67 seconds), 9 items updated, 874 evaluated
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+2026-11-17 17:22:39.958 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17930d20 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:22:39.963 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1560f200 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:22:39.968 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17930960 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:22:39.972 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c178a1cc0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Total cache size 267974706
+Total cache size after purge 267974706, took 00:00:00.4097780
+Thread 0x17b4d3000 may have been prematurely finalized
+Refreshing native plugins compatible for Editor in 2.04 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+2026-11-17 17:22:42.600 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c12c60280 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.699 seconds
+Domain Reload Profiling: 3380ms
+	BeginReloadAssembly (1261ms)
+		DisableScriptedObjects (143ms)
+		CreateAndSetChildDomain (604ms)
+	RebuildCommonClasses (11ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (340ms)
+		LoadAssemblies (196ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (20ms)
+			BuildScriptInfoCaches (144ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1699ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (377ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+		AwakeInstancesAfterBackupRestoration (468ms)
+
+Asset Pipeline Refresh (id=5eb679a41caa44928946ac8deffde977): Total: 7.924 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2684 ms
+		Asset DB Callback time: managed=66 ms, native=21 ms
+		Scripting: domain reloads=1, domain reload time=1752 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1368, non-scripts=2359
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 0.784ms
+	ApplyChangesToAssetFolders: 0.597ms
+	Scan: 364.772ms
+	Collect global state as custom dependencies: 7.282ms
+	ProcessAssetsWithTransientArtifactChanges: 8.424ms
+	CategorizeAssets: 163.901ms
+	CompileScripts: 1.057ms
+	ImportOutOfDateAssets: 1762.224ms (1712.973ms without children)
+		CollectScriptTypesHashes: 6.414ms
+		ReloadNativeAssets: 1.331ms
+		UnloadImportedAssets: 0.441ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.522ms
+		ImportSchedulerStart: 46.895ms
+	PostProcessAllAssets: 56.234ms
+		PostProcessCallbackCreateDeferredMaterials 1.420ms
+		XRBuildSystem.XRAssetImported 0.167ms
+		PostprocessAssetsUpdateCachedIcon 0.092ms
+		MonoPostProcessAllAssets: 52.515ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 10.182ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.518ms
+			AssetChangedListener.OnPostprocessAllAssets 4.754ms
+			AssetPostprocessor.OnPostprocessAllAssets 3.912ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.188ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.844ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.718ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.960ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.929ms
+			PostProcessor.OnPostprocessAllAssets 0.767ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.643ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.631ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.625ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.543ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.541ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.528ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.420ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.401ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.400ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.322ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.249ms
+			AssetEvents.OnPostprocessAllAssets 0.248ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.227ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.227ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.158ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.136ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.125ms
+			SyncVS.PostprocessSyncProject 0.119ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.119ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.117ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.098ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.089ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.080ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.055ms
+	PostAssetChangesProfiler: 10.071ms
+	PersistCurrentRevisions: 0.103ms
+	GenerateScriptTypeHashes: 2.370ms
+	GenerateScriptTypeSerializationHashes: 3.840ms
+	Untracked: 1815.971ms
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Request Asset Garbage Collect because used heap size increased from 348.4 MB to 0.59 GB, exceeding the threshold of 256.0 MB.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (9.9 KB). Loaded Objects now: 9482.
+Memory consumption went from 0.59 GB to 0.59 GB.
+Total: 54.041166 ms (FindLiveObjects: 1.965375 ms CreateObjectMapping: 1.240500 ms MarkObjects: 48.926750 ms  DeleteObjects: 1.907916 ms)
+
+2026-11-17 17:26:45.246 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17918640 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:02.046 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1791a620 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:09.737 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17926120 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:33.218 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17919cc0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Importing 'GUID: 7e780548853f346699af77dc514813cf - Path: Assets/EscenaJuego.unity' with importer (DefaultImporter)
+Imported 'GUID: 7e780548853f346699af77dc514813cf' -> (Import Result ID: 'c2904ecad66cc7a5c09287d9620d9786') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=9fa8ea738e097c6abaeca9a0b6f63761 DependenciesID=302a7c0731b68d94b345e531e8f6c9cf StaticDependenciesID=49ec4cd18c06672f46a5745b8889ff95 
+Refreshing native plugins compatible for Editor in 2.52 ms, found 2 plugins.
+Asset Pipeline Refresh (id=bfd17df269d4441e3bd034fc36de791b): Total: 0.245 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x7024a97000 may have been prematurely finalized
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+2026-11-17 17:27:42.334 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17925b80 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:42.337 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c17924c80 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:42.341 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c1791bb60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-11-17 17:27:42.345 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c130bc500 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 2.45 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.300 seconds
+Domain Reload Profiling: 2470ms
+	BeginReloadAssembly (893ms)
+		DisableScriptedObjects (69ms)
+		CreateAndSetChildDomain (627ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (154ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1300ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (293ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+		AwakeInstancesAfterBackupRestoration (435ms)
+
+Asset Pipeline Refresh (id=c4d6e3f2c420b48b2a223cfccd7725a8): Total: 2.858 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1527 ms
+		Asset DB Callback time: managed=17 ms, native=1 ms
+		Scripting: domain reloads=1, domain reload time=1309 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1368, non-scripts=2359
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 2.346ms
+	ApplyChangesToAssetFolders: 0.683ms
+	Collect global state as custom dependencies: 4.251ms
+	ProcessAssetsWithTransientArtifactChanges: 0.743ms
+	CategorizeAssets: 56.766ms
+	CompileScripts: 0.804ms
+	ImportOutOfDateAssets: 1347.952ms (1313.883ms without children)
+		CollectScriptTypesHashes: 1.024ms
+		ReloadNativeAssets: 1.011ms
+		UnloadImportedAssets: 0.183ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.542ms
+		ImportSchedulerStart: 32.301ms
+	PostProcessAllAssets: 17.875ms
+		MonoPostProcessAllAssets: 17.870ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 7.240ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.171ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.106ms
+			AssetChangedListener.OnPostprocessAllAssets 0.731ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.408ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.403ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.219ms
+			AssetPostprocessor.OnPostprocessAllAssets 0.205ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 0.182ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.176ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.170ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.158ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.083ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.073ms
+			SyncVS.PostprocessSyncProject 0.061ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.737ms
+	UnloadStreamsBegin: 0.534ms
+	PersistCurrentRevisions: 0.099ms
+	GenerateScriptTypeHashes: 1.824ms
+	GenerateScriptTypeSerializationHashes: 3.039ms
+	Untracked: 1421.889ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            7.109 ms
+	Integration:            667.157 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.003 ms
+	Total Operation Time:   674.271 ms
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.091875 ms
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            9.677 ms
+	Integration:            404.033 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       3.477 ms
+	Total Operation Time:   417.189 ms
+Unloading 234 unused Assets / (1.1 MB). Loaded Objects now: 9450.
+Memory consumption went from 390.5 MB to 389.5 MB.
+Total: 43.999459 ms (FindLiveObjects: 4.262709 ms CreateObjectMapping: 1.263291 ms MarkObjects: 35.988459 ms  DeleteObjects: 2.483750 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.914083 ms
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.276 ms
+	Integration:            270.661 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       3.309 ms
+	Total Operation Time:   276.247 ms
+Unloading 2 unused Assets / (300.9 KB). Loaded Objects now: 9450.
+Memory consumption went from 370.1 MB to 369.8 MB.
+Total: 32.537958 ms (FindLiveObjects: 0.790000 ms CreateObjectMapping: 0.932875 ms MarkObjects: 30.717208 ms  DeleteObjects: 0.093375 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.574416 ms
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.280 ms
+	Integration:            321.316 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       2.736 ms
+	Total Operation Time:   326.334 ms
+Unloading 2 unused Assets / (387.0 KB). Loaded Objects now: 9450.
+Memory consumption went from 371.6 MB to 371.2 MB.
+Total: 34.428459 ms (FindLiveObjects: 1.787959 ms CreateObjectMapping: 1.298375 ms MarkObjects: 31.198833 ms  DeleteObjects: 0.142542 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.903000 ms
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.363 ms
+	Integration:            292.342 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       2.834 ms
+	Total Operation Time:   297.541 ms
+Unloading 2 unused Assets / (280.5 KB). Loaded Objects now: 9450.
+Memory consumption went from 371.5 MB to 371.2 MB.
+Total: 28.249792 ms (FindLiveObjects: 0.547541 ms CreateObjectMapping: 0.797209 ms MarkObjects: 26.832416 ms  DeleteObjects: 0.071709 ms)
+
+Thread 0x17b0ef000 may have been prematurely finalized
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            5.686 ms
+	Integration:            334.877 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.003 ms
+	Total Operation Time:   340.568 ms
+Unloading 2 unused Assets / (424.8 KB). Loaded Objects now: 9317.
+Memory consumption went from 371.7 MB to 371.3 MB.
+Total: 31.349417 ms (FindLiveObjects: 2.018166 ms CreateObjectMapping: 0.883042 ms MarkObjects: 28.292833 ms  DeleteObjects: 0.154583 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+2026-11-17 17:28:28.638 Unity[8573:419789] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7c12c62d00 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used

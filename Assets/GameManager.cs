@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     public float aumentoDificultad = 0.5f;
     public int puntajeActual = 0;
     private float puntajeExacto = 0f;
+    private int nivelAnterior = 1;
 
     [Header("Interfaz HUD y Paneles")]
     public TextMeshProUGUI textoPuntajeUI;
@@ -25,7 +27,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoPuntajeFinalUI;
     public TextMeshProUGUI textoRecordFinalUI;
 
+    [Header("Efectos Visuales y Progreso UI")]
+    public ParticleSystem particulasNivel;
+    public Slider barraProgresoNivel;
+    public TextMeshProUGUI textoAvisoNivelUI;
+
     private bool juegoTerminado = false;
+    private float tiempoAviso = 0f;
 
     void Awake()
     {
@@ -55,6 +63,33 @@ public class GameManager : MonoBehaviour
         {
             textoPuntajeUI.text = "Nivel: " + nivelActual + " | Puntos: " + puntajeActual;
         }
+
+        if (barraProgresoNivel != null)
+        {
+            barraProgresoNivel.value = puntajeActual % 100;
+        }
+
+        if (nivelActual > nivelAnterior)
+        {
+            nivelAnterior = nivelActual;
+            if (particulasNivel != null) particulasNivel.Play();
+
+            if (textoAvisoNivelUI != null)
+            {
+                textoAvisoNivelUI.text = "¡NIVEL " + nivelActual + "!";
+                textoAvisoNivelUI.gameObject.SetActive(true);
+                tiempoAviso = 2f;
+            }
+        }
+
+        if (tiempoAviso > 0f)
+        {
+            tiempoAviso -= Time.deltaTime;
+            if (tiempoAviso <= 0f && textoAvisoNivelUI != null)
+            {
+                textoAvisoNivelUI.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void GenerarModulo()
@@ -74,24 +109,29 @@ public class GameManager : MonoBehaviour
         juegoTerminado = true;
 
         int mejorPuntaje = PlayerPrefs.GetInt("MejorPuntaje", 0);
+        bool esNuevoRecord = false;
+
         if (puntajeActual > mejorPuntaje)
         {
             mejorPuntaje = puntajeActual;
             PlayerPrefs.SetInt("MejorPuntaje", mejorPuntaje);
             PlayerPrefs.Save();
+            esNuevoRecord = true;
         }
 
-        
         Time.timeScale = 0f;
         if (panelGameOver != null)
         {
             panelGameOver.SetActive(true);
             if (textoPuntajeFinalUI != null) textoPuntajeFinalUI.text = "Puntaje Final: " + puntajeActual;
-            if (textoRecordFinalUI != null) textoRecordFinalUI.text = "Mejor Récord: " + mejorPuntaje;
+            if (textoRecordFinalUI != null)
+            {
+                textoRecordFinalUI.text = esNuevoRecord 
+                    ? "¡NUEVO RÉCORD!: " + mejorPuntaje 
+                    : "Mejor Récord: " + mejorPuntaje;
+            }
         }
     }
-
-   
 
     public void PausarJuego()
     {
