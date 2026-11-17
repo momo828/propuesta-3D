@@ -652,8 +652,8 @@ MonoBehaviour:
       m_LastClickedID:
         m_rawData: 0
       m_ExpandedIDs:
-      - m_rawData: 568105589213742890
       - m_rawData: 568105589213755996
+      - m_rawData: 568105584918839682
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -671,7 +671,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootEntityId:
@@ -808,9 +808,10 @@ MonoBehaviour:
     m_ExpandedIDs:
     - m_rawData: 0
     - m_rawData: 568105584918790924
-    - m_rawData: 568105584918839984
-    - m_rawData: 568105584918839986
-    - m_rawData: 568105584918839988
+    - m_rawData: 568105584918839990
+    - m_rawData: 568105584918839992
+    - m_rawData: 568105584918839994
+    - m_rawData: 568105584918839996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -845,9 +846,10 @@ MonoBehaviour:
     m_ExpandedIDs:
     - m_rawData: 0
     - m_rawData: 568105584918790924
-    - m_rawData: 568105584918839984
-    - m_rawData: 568105584918839986
-    - m_rawData: 568105584918839988
+    - m_rawData: 568105584918839990
+    - m_rawData: 568105584918839992
+    - m_rawData: 568105584918839994
+    - m_rawData: 568105584918839996
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
